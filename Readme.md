@@ -13,5 +13,11 @@
 
 # Setup Instructions
 
+ - video link
 
 # Excercises
+
+
+# Grading Rubrics
+
+
