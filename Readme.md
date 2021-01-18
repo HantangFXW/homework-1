@@ -20,7 +20,7 @@
 
 # Dataset Description
 
-The updated version of the database contains complete batting and pitching statistics from 1871 to 2019, plus fielding statistics, standings, team stats, managerial records, post-season data, and more. For more details on the latest release, please read the documentation in the dataset folder
+The updated version of the database contains complete batting and pitching statistics from 1871 to 2019, plus fielding statistics, standings, team stats, managerial records, post-season data, and more. For more details on the latest release, please read the documentation in the dataset folder. The dataset is of  year 2012.
 
 
 # Setup Instructions
