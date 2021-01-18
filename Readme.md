@@ -17,7 +17,7 @@
 
 # Useful Links to Instructions from Microsoft Teams Folder
 
-https://teams.microsoft.com/_#/school/files/General?threadId=19%3Ab7cf35dcd41643b3b89c750a0de7712b%40thread.tacv2&ctx=channel&context=about%2520colab%2520and%2520sql%2520on%2520aws&rootfolder=%252Fsites%252FTopicsInBigData%252FShared%2520Documents%252FGeneral%252FInstructions%252Fabout%2520colab%2520and%2520sql%2520on%2520aws
+ * https://teams.microsoft.com/_#/school/files/General?threadId=19%3Ab7cf35dcd41643b3b89c750a0de7712b%40thread.tacv2&ctx=channel&context=about%2520colab%2520and%2520sql%2520on%2520aws&rootfolder=%252Fsites%252FTopicsInBigData%252FShared%2520Documents%252FGeneral%252FInstructions%252Fabout%2520colab%2520and%2520sql%2520on%2520aws
 
 
 # Dataset Description
@@ -27,8 +27,6 @@ The updated version of the database contains complete batting and pitching stati
 
 # Setup Instructions
 
- - video link
- 
  - video link
  * https://youtu.be/0_3DW_QsquA
  * https://youtu.be/PnViiv3GTNs
