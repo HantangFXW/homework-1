@@ -1,7 +1,5 @@
 # Goals of the exercise. 
 
-- Explain what will you learn.
-
  * Learn to work with AWS and create an AWS RDS instance.
  * Learn to set up and upload structered data for eg: MLB Data in to MySQL RDS instance.
  * Query and analyze structrued data with MLB data as an example.
@@ -33,11 +31,13 @@ The updated version of the database contains complete batting and pitching stati
  * https://youtu.be/sTbScuX5j90
 
 # Exercises
- hw-1
+  hw.ipynb
 
 
 # Grading Rubrics
- hw-1
+ * Part 1 - 50 points
+ * Part 2 - 20 points
+ * Part 3 - 30 points
 
 
 
