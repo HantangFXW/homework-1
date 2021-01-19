@@ -155,7 +155,7 @@ Solve the other queries similarly.
 
 # Part 2 (20 Points)
 
-Now for some programming fun. Implement the task defined in [hw.ipynb](part2()). 
+Now for some programming fun. Implement the part2() task defined in [hw.ipynb]. 
 
 
 
@@ -173,18 +173,9 @@ You can use the man page for each command for detailed instructions.
 5. c5: A command to extract the distinct teams Bonds played for. Team is column four.
 6. c6: A command to extract the year from the first row in file.
 
-The bash.py will run these commands for you if you issue from the root folder of the cloned repository.
-
-```python
-python3 bash.py
-```
-
-It will also run tests and tell you which test is failing.
 
 To submit response, commit the hw.ipynb back in the repo, ensure that it has been correctly pushed. Validate by visiting github.com over browser. You can use any editor locally to fill in and edit the python file. But ensure that tabs are correctly set.
 
-
-```
 
 
 # Grading Rubrics
