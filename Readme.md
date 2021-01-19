@@ -31,6 +31,21 @@ The updated version of the database contains complete batting and pitching stati
  * https://youtu.be/sTbScuX5j90
 
 # Exercises
+
+
+## Repository Setup
+Repositories will be created for each student. You should see yours at
+
+https://github.com/vu-topics-in-big-data-2021/homework-1-<GITHUB USERNAME> 
+Clone the repository to your home directory on the cluster using:
+
+git clone https://github.com/vu-topics-in-big-data-2021/homework-1-<GITHUB USERNAME>.git
+I may push updates to this homework assignment in the future. To setup an upstream repo, do the following:
+
+git remote add upstream https://github.com/vu-topics-in-big-data-2021/homework-1.git
+To pull updates do the following: git fetch upstream git merge upstream/master
+
+You will need to resolve conflicts if they occur.
  
 
 ## AWS
