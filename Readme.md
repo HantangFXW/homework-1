@@ -4,25 +4,42 @@
  * Learn to set up and upload structered data for eg: MLB Data in to MySQL RDS instance.
  * Query and analyze structrued data with MLB data as an example.
 
+# Checklist of assignment Steps
+
+- Accept the assignment at github classroom
+- Update the notebooks in the assignment with your username as discussed in [AcceptingaGithubassignment.pdf](https://github.com/vu-topics-in-big-data-2021/homework-0/blob/main/AcceptingaGithubassignment.pdf)
+- Ensure you have AWS Educate access through the classroom
+- Follow the steps to create the database in AWS.
+- Finish the queries and save the response in the mlb.ipynb notebook. Save the results to show the execution results.
+- Profile the queries as described in the last step and save the profile results in the notebook as well.
+- Copy the assignment github url and submit to  brightspace
+- Delete your mysql instance from AWS when you are sure that you are done. Remember to always pause the datbase when you are not using it and turn it on when you are going to be doing the assignment.
+
+
 # Prior Reading
   
- * Make sure to go through the SQL content for  week 2 in Brightspace
+ * Make sure to go through the [SQL content for  week 2 in Brightspace](https://brightspace.vanderbilt.edu/d2l/le/content/269528/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-1695574)
 
-# Instructions
+## Helpful Links and  Instructions
 
-For this assignment you will need the following instructions from the Miscellaneous Notes and Instructions section in the content
+For this assignment you may  need to refer to the following instructions from the Miscellaneous Notes and Instructions section in the brightspace.
 
-- about github
-- about aws educate
-- about colab
-- about colab and SQL on aws
-- about code profiling
+- [about github](https://brightspace.vanderbilt.edu/d2l/le/content/269528/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-1714758)
+- [about aws educate](https://brightspace.vanderbilt.edu/d2l/le/content/269528/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-1714690)
+- [about colab](https://brightspace.vanderbilt.edu/d2l/le/content/269528/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-1714723)
+- [about colab and SQL on aws](https://brightspace.vanderbilt.edu/d2l/le/content/269528/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-1714733)
+- [about code profiling](https://brightspace.vanderbilt.edu/d2l/le/content/269528/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-1714700)
 
-# Dataset Description
+
+**Remember** - Update the notebooks in the repository with your username as discussed in [AcceptingaGithubassignment.pdf](https://github.com/vu-topics-in-big-data-2021/homework-0/blob/main/AcceptingaGithubassignment.pdf)
+
+You also did this in assignment 0.
+
+# Assignment Description (100 points)
 
 In this assignment you are using a database that contains batting and pitching statistics from 1871 onwards, plus fielding statistics, standings, team stats, managerial records, post-season data, and more. See [readme2012.txt](data/readme2012.txt) for details about this MLB data.
 
-# Software Required and initial steps
+## Software Required and initial steps
 
 I encourage the use of [MySQL Workbench](https://www.mysql.com/products/workbench/)  to practice SQL and work with the data. This will help you determine the query to be used which you can then paste as a string in the colab notebook and run it.
 
@@ -50,8 +67,6 @@ Make sure you have received the invitation and accepted the invitation
 To access AWS go to https://aws.amazon.com/education/awseducate/ and use the account you created when you were invited to the class. Ensure that you can access this account and can land into an AWS console as shown below.
 
 ![AWS](images/AWS.png)
-
-# Assignment (100 points)
 
 ## Step-1 Create the MYSQL Instance
 
@@ -86,7 +101,9 @@ You can also issue the queries "use lahman" (i.e. select this database for use),
 
 ## Step 3- Check initial Colab Connection
 
-Run the Colab notebook [mlb.ipynb](mlb.ipynb) and ensure that you get the connection and the number of db tables correctly. Make sure that you update the database name, the username and the password.  Remember that you have to change the initial url to include your name correctly just as you did in assignment 0. Then go ahead and click on **open in colab**.
+Run the Colab notebook [mlb.ipynb](mlb.ipynb) and ensure that you get the connection and the number of db tables correctly. Make sure that you update the database name, the username and the password.  
+
+**Remember that you have to change the initial url to include your name correctly just as you did in assignment 0. Then go ahead and click on - open in colab**.
 
 Note that if the button is not available - or the direct click from github does not work - you can also login to google colab and choose open (from github),  enable private repos and search for your repo in the list and open. 
 
@@ -94,7 +111,7 @@ If you do not have access to colab - then you can run the notebook locally throu
 
 **Very Important** : Remember to shutoff the RDS instance when you are not using it.
 
-## Step 4 -  Queries  (Part 1 - note part 2 is profiling the queries)
+## Step 4 - Implement Queries   
 
 Implement all the SQL queries identified in mlb.ipynb . Record the answers in the mlb.ipynb and save it back to your repository.
 
@@ -169,7 +186,7 @@ Remember you can formulate the queries and execute them directly through workben
 
 Solve the other queries similarly.
 
-## Part 2 
+## Step 5 - Implement Profiling for the queries
 
 Profile the queries as shown in the notebook. Use the profiling instructions shown in brightspace.
 
