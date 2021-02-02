@@ -15,7 +15,7 @@
 - Finish the queries and save the response in the mlb.ipynb notebook. Save the results to show the execution results.
 - Profile the queries as described in the last step and save the profile results in the notebook as well.
 - Copy the assignment github url and submit to  brightspace
-- Delete your mysql instance from AWS when you are sure that you are done. Remember to always pause the datbase when you are not using it and turn it on when you are going to be doing the assignment.
+- Delete your mysql instance from AWS when you are sure that you are done. Remember to always pause the database when you are not using it and turn it on when you are going to be doing the assignment.
 
 
 # Prior Reading
