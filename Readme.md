@@ -7,7 +7,7 @@
 # Checklist of assignment Steps
 
 - Accept the assignment at github classroom
-- Update the notebooks in the assignment with your username as discussed in [AcceptingaGithubassignment.pdf](https://github.com/vu-topics-in-big-data-2021/homework-0/blob/main/AcceptingaGithubassignment.pdf)
+- Update the notebooks in the assignment with your username as discussed in [AcceptingaGithubassignment.pdf](AcceptingaGithubassignment.pdf)
 - Ensure you have AWS Educate access through the classroom
 - Follow the steps to create the database in AWS.
 - Finish the queries and save the response in the mlb.ipynb notebook. Save the results to show the execution results.
