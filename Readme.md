@@ -94,7 +94,7 @@ If you do not have access to colab - then you can run the notebook locally throu
 
 **Very Important** : Remember to shutoff the RDS instance when you are not using it.
 
-## Step 4 -  Queries 
+## Step 4 -  Queries  (Part 1 - note part 2 is profiling the queries)
 
 Implement all the SQL queries identified in mlb.ipynb . Record the answers in the mlb.ipynb and save it back to your repository.
 
@@ -153,6 +153,8 @@ G_old	int	YES
 
 You will notice that playerid, yearid and stintid together forms a composite primary key.
 
+
+
 ### Hint 1:
 
 To solve the third query I can first find the max and then create an inner join as follows
@@ -166,6 +168,10 @@ select * from batting INNER Join (select MAX(HR) as m from batting) as data ON b
 Remember you can formulate the queries and execute them directly through workbench. Once that is done and you like the result, copy the query to the python notebook
 
 Solve the other queries similarly.
+
+## Part 2 
+
+Profile the queries as shown in the notebook. Use the profiling instructions shown in brightspace.
 
 # Grading Rubrics
 
