@@ -33,10 +33,10 @@ To download the repository locally follow these steps
 ## Repository Setup
 Repositories will be created for each student. You should see yours at
 
-https://github.com/vu-topics-in-big-data-2021/homework-1-<GITHUB USERNAME> 
+https://github.com/vu-topics-in-big-data-2021/homework-1-\<GITHUB USERNAME\> 
 Clone the repository to your home directory on the cluster using:
 
-git clone https://github.com/vu-topics-in-big-data-2021/homework-1-<GITHUB USERNAME>.git
+git clone https://github.com/vu-topics-in-big-data-2021/homework-1-\<GITHUB USERNAME\>.git
 I may push updates to this homework assignment in the future. To setup an upstream repo, do the following:
 
 git remote add upstream https://github.com/vu-topics-in-big-data-2021/homework-1.git
