@@ -6,6 +6,8 @@
 
 # Checklist of assignment Steps
 
+**Due Date: February 16, 11:59 PM**
+
 - Accept the assignment at github classroom
 - Update the notebooks in the assignment with your username as discussed in [AcceptingaGithubassignment.pdf](AcceptingaGithubassignment.pdf)
 - Ensure you have AWS Educate access through the classroom
@@ -134,7 +136,7 @@ The queries are
 
 You can test each query result using the  corresponding tests in the notebook.
 
-To start solving this here are few hints. First understand the table and the data from http://www.seanlahman.com/files/database/readme2012.txt . Then execute the query describe tablename on mysql. you can describe other tables as well.
+To start solving this here are few hints. First understand the table and the data from [data/readme2012.txt](data/readme2012.txt) . Then execute the query describe tablename on mysql. you can describe other tables as well.
 
 For example here is the response for 
 
