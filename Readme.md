@@ -71,7 +71,7 @@ Then load the lahman data into mysql from [data/lahman2012.sql](data/lahman2012.
 
 ![SQL script](images/MySQLWB.png)
 
-Once it hs been loaded you can execute the query "show databases" and it will show you a number of databases included lahman. See below
+Once it has been loaded you can execute the query "show databases" and it will show you a number of databases included lahman. See below
 
 ![SQL script](images/sqlworkbench1.png)
 
