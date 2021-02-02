@@ -3,35 +3,32 @@
  * Learn to work with AWS and create an AWS RDS instance.
  * Learn to set up and upload structered data for eg: MLB Data in to MySQL RDS instance.
  * Query and analyze structrued data with MLB data as an example.
- * Write solutions to selected programming questions (Part 2 and Part 3).
-
 
 # Prior Reading
   
- * Read any research papers given by Prof. Dubey
- * https://www.tutorialrepublic.com/sql-tutorial/
- * https://www.w3schools.com/sql/
+ * Make sure to go through the SQL content for  week 2 in Brightspace
 
+# Instructions
 
-# Useful Links to Instructions from Microsoft Teams Folder
+For this assignment you will need the following instructions from the Miscellaneous Notes and Instructions section in the content
 
- * https://teams.microsoft.com/_#/school/files/General?threadId=19%3Ab7cf35dcd41643b3b89c750a0de7712b%40thread.tacv2&ctx=channel&context=about%2520colab%2520and%2520sql%2520on%2520aws&rootfolder=%252Fsites%252FTopicsInBigData%252FShared%2520Documents%252FGeneral%252FInstructions%252Fabout%2520colab%2520and%2520sql%2520on%2520aws
-
+- about github
+- about aws educate
+- about colab
+- about colab and SQL on aws
+- about code profiling
 
 # Dataset Description
 
-The updated version of the database contains complete batting and pitching statistics from 1871 to 2019, plus fielding statistics, standings, team stats, managerial records, post-season data, and more. For more details on the latest release, please read the documentation in the dataset folder. The dataset is of  year 2012.
+In this assignment you are using a database that contains batting and pitching statistics from 1871 onwards, plus fielding statistics, standings, team stats, managerial records, post-season data, and more. See [readme2012.txt](data/readme2012.txt) for details about this MLB data.
 
+# Software Required and initial steps
 
-# Setup Instructions
+I encourage the use of [MySQL Workbench](https://www.mysql.com/products/workbench/)  to practice SQL and work with the data. This will help you determine the query to be used which you can then paste as a string in the colab notebook and run it.
 
- - video link
- * https://youtu.be/0_3DW_QsquA
- * https://youtu.be/PnViiv3GTNs
- * https://youtu.be/sTbScuX5j90
+Also note that each repository can be downloaded to your local machine. But you can also work with opening the notebook directly from google colab.  
 
-# Exercises
-
+To download the repository locally follow these steps
 
 ## Repository Setup
 Repositories will be created for each student. You should see yours at
@@ -47,32 +44,30 @@ To pull updates do the following: git fetch upstream git merge upstream/master
 
 You will need to resolve conflicts if they occur.
  
-
 ## AWS
+Make sure you have received the invitation and accepted the invitation
+
 To access AWS go to https://aws.amazon.com/education/awseducate/ and use the account you created when you were invited to the class. Ensure that you can access this account and can land into an AWS console as shown below.
 
 ![AWS](images/AWS.png)
 
-# Part 1 (50 points)
+# Assignment (100 points)
 
 ## Step-1 Create the MYSQL Instance
 
-Follow the instructions at https://aws.amazon.com/getting-started/tutorials/create-mysql-db/ to create a mysql database instance. Follow the instructions carefully to remain within **free tier**. That last part is very important.
+Follow the instructions at https://aws.amazon.com/getting-started/tutorials/create-mysql-db/ to create a mysql database instance. Follow the instructions carefully to remain within **free tier**. That last part is very important. The videos that you saw in brightspace will help you with these instructions. 
 
-Also to ensure that you can connect this from google colab you will need to ensure that you choose Public accessibliity (see the image on https://aws.amazon.com/getting-started/tutorials/create-mysql-db/ in the configure advanced settings section.). 
+To ensure that you can connect this from google colab you will need to ensure that you choose Public accessibliity (see the image on https://aws.amazon.com/getting-started/tutorials/create-mysql-db/ in the configure advanced settings section.). 
 
 Lastly, you should choose the default VPC. But create a new VPC security group. Once that group is created you can open the inbound connection to 0.0.0.0/0 (Anywhere) for port 3306 - the mysql port. See https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html for reference.
 
 Note that once you start it can take 10-15 minutes for the RDS instance to be provisioned
 
-
 ## Step 2 - Populate the MySQL instance
 
 Download MySQL Workbench and connect to the database you created in the first step. Follow the Step 2 at https://aws.amazon.com/getting-started/tutorials/create-mysql-db/. 
 
-Then load the lahman data into mysql from [data/lahman2012.sql](data/lahman2012.sql). See [readme2012.txt](data/readme2012.txt) for details about this MLB data.
-
-To load the data first connect your SQL workbench to your database on AWS and then load sql script referenced above (lahman2012.sql) from Run SQL Script prompt. Choose default schema. It will create a database called lahman.
+Then load the lahman data into mysql from [data/lahman2012.sql](data/lahman2012.sql). See [readme2012.txt](data/readme2012.txt) for details about this MLB data. To load the data first connect your SQL workbench to your database on AWS and then load sql script referenced above (lahman2012.sql) from Run SQL Script prompt. Choose default schema. It will create a database called lahman.
 
 ![SQL script](images/MySQLWB.png)
 
@@ -86,18 +81,22 @@ You can also issue the queries "use lahman" (i.e. select this database for use),
 
 ![SQL script](images/sqlworkbench2.png)
 
+**Very Important** : Remember to shutoff the RDS instance when you are not using it.  
+
 
 ## Step 3- Check initial Colab Connection
 
-Run the Colab connection script [test-setup.ipynb](test-setup.ipynb) and ensure that you get the connection and the number of db tables correctly. Make sure that you update the database name, the username and the password. 
+Run the Colab notebook [mlb.ipynb](mlb.ipynb) and ensure that you get the connection and the number of db tables correctly. Make sure that you update the database name, the username and the password.  Remember that you have to change the initial url to include your name correctly just as you did in assignment 0. Then go ahead and click on **open in colab**.
 
+Note that if the button is not available - or the direct click from github does not work - you can also login to google colab and choose open (from github),  enable private repos and search for your repo in the list and open. 
 
-Remember to shutoff the RDS instance when you are not using it.
+If you do not have access to colab - then you can run the notebook locally through anaconda jupter server. See the instructions about [class python environment](https://github.com/vu-topics-in-big-data-2021/class-python-environment). 
+
+**Very Important** : Remember to shutoff the RDS instance when you are not using it.
 
 ## Step 4 -  Queries 
 
-Implement all the SQL queries identified in hw.ipynb in part1(). Record the answers in the hw.ipynb and save it back to your repository.
-
+Implement all the SQL queries identified in mlb.ipynb . Record the answers in the mlb.ipynb and save it back to your repository.
 
 The queries are
 
@@ -164,39 +163,17 @@ select * from batting INNER Join (select MAX(HR) as m from batting) as data ON b
 
 ### Hint 2:
 
-Initially you can formulate the queries and execute them directly through workbench. Once that is done and you like the result, copy the query to the python notebook
+Remember you can formulate the queries and execute them directly through workbench. Once that is done and you like the result, copy the query to the python notebook
 
 Solve the other queries similarly.
 
-# Part 2 (20 Points)
-
-Now for some programming fun. Implement the part2() task defined in [hw.ipynb]. 
-
-
-
-# Part 3 (30 points)
-
-## Complete the parts in hw.ipynb in part3() and fill the commands c1,c2,c3,c4,c5 and c6
-
-for this part you will have to experiment Use cat, grep, wc, cut, sort, head and tail to implement the following tasks.
-You can use the man page for each command for detailed instructions.
-
-1. c1: A command to count the lines in bonds.csv found in the data subfolder of your homework repo.
-2. c2: A command to count the number of lines between 2000-2009. The second column is the year.
-3. c3: A command to count the number of lines not between 2000-2009.
-4. c4: A command to extract the largest number of games Bonds played in a year. Games played is column six.
-5. c5: A command to extract the distinct teams Bonds played for. Team is column four.
-6. c6: A command to extract the year from the first row in file.
-
-
-To submit response, commit the hw.ipynb back in the repo, ensure that it has been correctly pushed. Validate by visiting github.com over browser. You can use any editor locally to fill in and edit the python file. But ensure that tabs are correctly set.
-
-
-
 # Grading Rubrics
- * Part 1 - 50 points
- * Part 2 - 20 points
- * Part 3 - 30 points
+
+- Each query is carries equal points. Query 1 and 3 are already solved. So you have to implement 12 queries and each query is worth 8 points.
+- 4 points for implementing the profiling code that will run each test and record the time taken to execute. Save all answers in notebook and save it back to github
+
+- When finished submit your url to brightspace for the assignment
+
 
 
 
